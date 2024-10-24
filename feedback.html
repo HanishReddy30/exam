@@ -1,0 +1,41 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Product Feedback Form</title>
+    <link rel="stylesheet" href="feedback.css">
+</head>
+<body>
+    <div class="fform">
+        <h2>Product Feedback</h2>
+        <form id="feedbackForm">
+            <label for="productName">Product Name:</label>
+            <input type="text" id="productName" name="productName" required>
+            <br>
+            <label>Rating:</label>
+            <div class="rating">
+                <label><input type="radio" name="rating" value="1" required> 1 Star</label>
+                <br>
+                <label><input type="radio" name="rating" value="2"> 2 Stars</label>
+                <br>
+                <label><input type="radio" name="rating" value="3"> 3 Stars</label>
+                <br>
+                <label><input type="radio" name="rating" value="4"> 4 Stars</label>
+                <br>
+                <label><input type="radio" name="rating" value="5"> 5 Stars</label>
+                <br>
+            </div>
+            <label for="feedback">Feedback:</label>
+            <textarea id="feedback" name="feedback" rows="4" required></textarea>
+            <br>
+            <label><input type="checkbox" name="subscribe" id="subscribe"> Subscribe to newsletter</label>
+            <br>
+            <button type="submit">Submit Feedback</button>
+        </form>
+    </div>
+    <script src="feedback.js"></script>
+</body>
+</html>
+
+
